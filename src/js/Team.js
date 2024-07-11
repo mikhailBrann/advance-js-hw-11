@@ -19,4 +19,10 @@ export default class Team {
             }
         };
     }
+
+    *customGenerator() {
+        for (let char of this.list) {
+            yield char;
+        }
+    }
 }

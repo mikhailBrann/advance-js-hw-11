@@ -30,6 +30,10 @@ const chars = [
 const team = new Team();
 chars.forEach(char => team.addList(char));
 
+console.log('---iterator---');
 for (let char of team) {
     console.log(char);
 }
+
+console.log('---generator---');
+team.customGenerator().forEach(char => console.log(char));
